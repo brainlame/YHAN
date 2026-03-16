@@ -1,0 +1,22 @@
+---
+import { C } from "../tokens";
+
+export interface Props {
+  light?: boolean;
+}
+
+const { light } = Astro.props;
+const color = light ? "#fff" : C.navy;
+---
+<h2
+  style={`
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+    font-size: clamp(1.9rem, 3vw, 2.8rem);
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    color: ${color};
+  `}
+>
+  <slot />
+</h2>
