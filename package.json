@@ -1,25 +1,22 @@
 {
-    "name": "my-app",
-    "version": "0.1.0",
-    "private": true,
-    "scripts": {
-        "dev": "astro dev",
-        "build": "astro build",
-        "preview": "astro preview",
-        "start": "astro dev"
-    },
-    "devDependencies": {
-        "@tailwindcss/postcss": "^4",
-        "@types/leaflet": "^1.9.21",
-        "@types/node": "^20",
-        "eslint": "^9",
-        "tailwindcss": "^4",
-        "typescript": "^5.9.3"
-    },
-    "dependencies": {
-        "@astrojs/check": "^0.9.8",
-        "@astrojs/svelte": "^5.7.3",
-        "astro": "^4.16.19",
-        "svelte": "^4.2.20"
-    }
+  "name": "yhan-sveltekit",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite dev",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@sveltejs/adapter-auto": "^3.3.1",
+    "@sveltejs/kit": "^2.16.1",
+    "@sveltejs/vite-plugin-svelte": "^5.0.3",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.5.1",
+    "svelte": "^5.19.0",
+    "tailwindcss": "^3.4.17",
+    "vite": "^6.0.11",
+    "typescript": "^5.7.3"
+  },
+  "type": "module"
 }

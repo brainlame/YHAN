@@ -1,11 +1,11 @@
 <script lang="ts">
-  let form = {
+  let form = $state({
     firstName: "",
     lastName: "",
     email: "",
     topic: "",
     message: "",
-  };
+  });
 
   function handleSubmit() {
     const mailto = `mailto:ayra@yhan.org?subject=${encodeURIComponent(
@@ -81,7 +81,7 @@
   </div>
 
   <button
-    on:click={handleSubmit}
+    onclick={handleSubmit}
     class="w-full py-[14px] bg-yhan-orange text-white border-none rounded-[10px] font-sans font-extrabold text-[0.93rem] cursor-pointer mt-[6px]"
   >
     Send Message →
