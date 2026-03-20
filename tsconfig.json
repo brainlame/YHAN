@@ -1,16 +1,16 @@
 {
-  "compilerOptions": {
-    "moduleResolution": "bundler",
-    "module": "esnext",
-    "target": "esnext",
-    "lib": ["esnext", "dom"],
-    "skipLibCheck": true,
-    "strict": true,
-    "allowJs": true,
-    "baseUrl": ".",
-    "paths": {
-      "$components/*": ["src/lib/components/*"]
-    }
-  },
-  "include": ["src/**/*.ts", "src/**/*.js", "src/**/*.svelte"]
+    "compilerOptions": {
+        "moduleResolution": "bundler",
+        "module": "esnext",
+        "target": "esnext",
+        "lib": ["esnext", "dom"],
+        "skipLibCheck": true,
+        "strict": true,
+        "allowJs": true,
+        "baseUrl": ".",
+        "paths": {
+            "$components/*": ["src/lib/components/*"]
+        }
+    },
+    "include": ["src/**/*.ts", "src/**/*.js", "src/**/*.svelte"]
 }

@@ -1,4 +1,5 @@
 <script lang="ts">
+  import LogoText from "$components/LogoText.svelte";
   let { activePage } = $props<{ activePage: "home" | "team" | "chapters" }>();
 
   let isOpen = $state(false);
@@ -27,21 +28,12 @@
 
 <svelte:window onresize={handleResize} />
 
-<header class={`fixed top-0 left-0 right-0 z-[100] border-b-[1.5px] border-yhan-border transition-colors duration-300 ${isOpen ? 'bg-white' : 'bg-white/95 backdrop-blur-[12px]'}`}>
+<header class={`fixed top-[5px] left-0 right-0 z-[9999] border-b-[1.5px] border-yhan-border transition-colors duration-300 ${isOpen ? 'bg-white' : 'bg-white/95 backdrop-blur-[12px]'}`}>
   <div class="flex items-center justify-between px-5 md:px-[60px] h-[70px]">
     
     <!-- Brand / Logo -->
     <a href="/" class="flex items-center gap-[10px] no-underline relative z-50 shrink-0">
-      <div class="leading-[1.1]">
-        <div class="font-sans font-black text-[0.85rem] sm:text-[1rem] text-yhan-navy tracking-[-0.01em] flex flex-wrap gap-x-[3px] sm:gap-x-0">
-          <span class="text-yhan-orange">Youth Health</span>
-          <span class="text-yhan-hyphen hidden sm:inline-block sm:mx-[3px]">-</span>
-          <span>Accountability</span>
-        </div>
-        <div class="font-sans font-bold text-[0.55rem] sm:text-[0.6rem] tracking-[0.18em] uppercase text-yhan-mid mt-0.5">
-          Network
-        </div>
-      </div>
+      <LogoText sizeClass="text-[0.95rem] sm:text-[1.1rem]" />
     </a>
 
     <!-- Desktop Navigation -->

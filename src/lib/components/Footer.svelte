@@ -1,4 +1,6 @@
 <script lang="ts">
+  import LogoText from "$components/LogoText.svelte";
+  
   const NAVIGATE_LINKS = [
     { label: "Home",     href: "/" },
     { label: "Team",     href: "/team" },
@@ -7,9 +9,9 @@
   ];
 
   const INVOLVE_LINKS = [
-    { label: "Apply as Ambassador", href: "mailto:ayra@yhan.org?subject=Ambassador Application" },
-    { label: "Start a Chapter",     href: "mailto:ayra@yhan.org?subject=Start a Chapter" },
-    { label: "Partner with Us",     href: "mailto:ayra@yhan.org?subject=Partnership Inquiry" },
+    { label: "Apply as Ambassador", href: "mailto:ayrasaraidhillon@gmail.com?subject=Ambassador Application" },
+    { label: "Start a Chapter",     href: "mailto:ayrasaraidhillon@gmail.com?subject=Start a Chapter" },
+    { label: "Partner with Us",     href: "mailto:ayrasaraidhillon@gmail.com?subject=Partnership Inquiry" },
   ];
 
   const currentYear = new Date().getFullYear();
@@ -18,13 +20,8 @@
 <footer class="bg-yhan-navy px-6 md:px-[60px] pt-[64px] pb-[32px] w-full overflow-hidden">
   <div class="flex flex-col md:grid md:grid-cols-[1.6fr_1fr_1fr] gap-10 md:gap-[56px] mb-[48px]">
     <div>
-      <a href="/" class="no-underline block w-full">
-        <div class="font-sans font-black text-[0.95rem] text-white mb-[14px]">
-          <span class="text-yhan-orange">Youth Health</span> - Accountability
-          <div class="font-sans font-bold text-[0.6rem] tracking-[0.18em] uppercase text-white/30 mt-[2px]">
-            Network
-          </div>
-        </div>
+      <a href="/" class="no-underline block w-full mb-[14px]">
+        <LogoText light={true} sizeClass="text-[0.95rem]" />
       </a>
       <p class="font-sans text-[0.84rem] text-white/40 leading-[1.7] font-medium max-w-[300px]">
         A global student-led movement using youth insight to reshape

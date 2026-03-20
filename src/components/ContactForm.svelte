@@ -8,7 +8,7 @@
   };
 
   function handleSubmit() {
-    const mailto = `mailto:ayra@yhan.org?subject=${encodeURIComponent(
+    const mailto = `mailto:ayrasaraidhillon@gmail.com?subject=${encodeURIComponent(
       form.topic || "Inquiry"
     )}&body=${encodeURIComponent(
       `Name: ${form.firstName} ${form.lastName}\nEmail: ${form.email}\n\n${form.message}`
@@ -33,7 +33,6 @@
       <label class={labelClass}>First Name</label>
       <input
         class={inputClass}
-        placeholder="Ayra"
         bind:value={form.firstName}
       />
     </div>
@@ -41,7 +40,6 @@
       <label class={labelClass}>Last Name</label>
       <input
         class={inputClass}
-        placeholder="Dhillon"
         bind:value={form.lastName}
       />
     </div>
